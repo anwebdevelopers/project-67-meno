@@ -1,0 +1,235 @@
+.header {
+    background-color: #fff;
+    transition: all .5s ease;
+}
+.stick {
+
+    .stick__inner {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        .header {
+            transform: translateY(-100%);
+            border-bottom: 2px solid $red;
+            box-shadow: 0 1.2rem 3rem 0 rgba(0,0,0, .3);
+        }
+    }
+
+}
+.header__box {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    text-decoration: none;
+    color: inherit;
+    flex: 0 0 auto;
+    width: calc(25% - 1rem);
+    padding: 2.5rem 0;
+
+    display: flex;
+    align-items: center;
+}
+.header__logo-img {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 9.2rem;
+    img {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.header__logo-text {
+    flex: 1 1 auto;
+    margin: 1rem 0 0 2rem;
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 600;
+    color: $brown;
+}
+.header__menu {
+    flex: 0 0 auto;
+    width: calc(50% - 2rem);
+    margin: 0 2rem;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 2.2rem;
+        line-height: 1;
+        font-weight: 500;
+        color: $brown;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            flex: 0 1 auto;
+            margin: 0 1.5rem;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                display: inline-block;
+                vertical-align: top;
+                padding: 5.5rem 0;
+
+                white-space: nowrap;
+                transition: all .3s ease;
+
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 0;
+                    background-color: $red;
+                    transition: inherit;
+                }
+                &:hover, &:active {
+                    &:after {
+                        height: .5rem;
+                    }
+                }
+                &:active {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+.header__login {
+    text-decoration: none;
+    color: inherit;
+    flex: 0 0 auto;
+    width: calc(25% - 1rem);
+    padding: 2.5rem 0;
+
+    display: flex;
+    align-items: center;
+}
+.header__login-img {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 7rem;
+    height: 7rem;
+    line-height: 7rem;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: $red;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}
+.header__login-box {
+    flex: 1 1 auto;
+    margin: 1rem 2rem 0 0;
+    text-align: right;
+}
+.header__login-title {
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 500;
+    color: $brown;
+}
+.header__login-text {
+    margin: .5rem 0 0 0;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+.header__login-title,
+.header__login-text {
+    a {
+        text-decoration: none;
+        color: $blue;
+        transition: all .5s ease;
+        &:hover {
+            color: $red;
+        }
+        &:active {
+            color: $red-dark;
+        }
+    }
+}
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+    .header__box {
+        flex-wrap: wrap;
+    }
+    .header__logo {
+        width: calc(50% - 1rem);
+        margin: 0 1rem 0 0;
+        padding: 1.5rem 0;
+    }
+    .header__login {
+        width: calc(50% - 1rem);
+        margin: 0 0 0 1rem;
+        padding: 1.5rem 0;
+    }
+    .header__menu {
+        order: 1;
+        width: 100%;
+        margin: 0;
+        ul {
+            li {
+                a {
+                    padding: 1rem 0 3rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .header__box {
+        display: block;
+    }
+    .header__logo {
+        width: auto;
+        margin: 0;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__login {
+        width: auto;
+        margin: 0;
+        flex-direction: row-reverse;
+    }
+    .header__login-box {
+        margin: 1rem 0 0 2rem;
+        text-align: inherit;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}
