@@ -27,12 +27,25 @@
 	<header class="header">
 		<div class="header__container container">
 			<div class="header__box">
-				<a href="#" class="header__logo">
+				<div class="header__logo">
 					<figure class="header__logo-img">
 						<img src="img/logo.png" alt="">
 					</figure>
 					<div class="header__logo-text">Российская  <br>ассоциация  <br>по менопаузе</div>
-				</a>
+					<button class="header__button-menu"><span></span></button>
+				</div>
+
+				<div class="header__login">
+					<figure class="header__login-img">
+						<!-- <img src="img/img-login.png" alt=""> -->
+						<img src="img/img-user.jpg" alt="">
+					</figure>
+					<div class="header__login-box">
+						<!-- <div class="header__login-title"><a href="#">Войти</a></div> -->
+						<div class="header__login-title">Константинов К.Е.</div>
+						<div class="header__login-text"><a href="#">Личный кабинет</a></div>
+					</div>
+				</div>
 				<nav class="header__menu">
 					<ul>
 						<li><a href="#">Об ассоциации</a></li>
@@ -41,34 +54,222 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
-				<div class="header__login">
-					<div class="header__login-box">
-						<!-- <div class="header__login-title"><a href="#">Войти</a></div> -->
-						<div class="header__login-title">Константинов К.Е.</div>
-						<div class="header__login-text"><a href="#">Личный кабинет</a></div>
-					</div>
-					<figure class="header__login-img">
-						<!-- <img src="img/img-login.png" alt=""> -->
-						<img src="img/img-user.jpg" alt="">
-					</figure>
-				</div>
 			</div>
 		</div>
 	</header>
 
 
-	<section>
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta vero dolor maxime porro ut aspernatur. Iusto placeat esse consectetur culpa voluptatum omnis modi harum possimus debitis eum. Magnam, distinctio, voluptatibus.</div>
-		<div>Aspernatur nisi enim fuga necessitatibus perferendis commodi maxime ducimus sed quibusdam et quos adipisci quaerat architecto, labore expedita totam, id! Et modi reiciendis quia, beatae nam neque magni accusantium vel!</div>
-		<div>Officiis quod minima voluptatum odit officia earum, dolorum voluptas cumque! Sunt accusamus qui eius aut, doloremque, officia magni eligendi incidunt. At architecto, iure dolorum, illo neque iste repellat minus ad.</div>
-		<div>Voluptatum, error. Illo ab quibusdam autem, officia porro. Alias consequatur ipsum ea, rerum eos ut voluptatibus nisi minima eaque autem neque quasi nulla nihil quisquam, hic ab tenetur, rem vero!</div>
-		<div>Consectetur aperiam iste quam iusto pariatur. Beatae nemo itaque mollitia rerum earum velit reiciendis deleniti, tempore non quisquam vero nam dolorem, illo, saepe id maxime excepturi sint ut distinctio? Suscipit.</div>
-		<div>Sunt quod officiis dolore reiciendis laudantium ullam natus? Modi, placeat, labore! Omnis, possimus officia quam natus, vel corporis dolor! Nihil autem blanditiis nostrum vitae quas fuga qui corporis, reiciendis nam?</div>
-		<div>Quos, animi soluta consectetur laborum velit, libero porro quaerat dolores reprehenderit ad quidem corporis, hic! Unde reprehenderit, dolorum repellat ipsum in velit pariatur perspiciatis odit minima quod cum quas repellendus.</div>
-		<div>Laboriosam consectetur maiores sapiente harum quos eos sunt accusantium a reprehenderit commodi similique, rerum, enim reiciendis molestiae, inventore, sint debitis provident eaque exercitationem odit praesentium dolores deserunt. Facilis, nam laboriosam?</div>
-		<div>Hic consequuntur laborum sint illo excepturi, voluptates autem adipisci laudantium? Voluptatibus amet perspiciatis veritatis. Enim porro molestias placeat quasi, eius, excepturi numquam ullam quibusdam, eveniet, sunt eaque labore eligendi quaerat.</div>
-		<div>Tenetur hic possimus quia facilis sequi eligendi, mollitia corporis aperiam. Illum perferendis quos velit obcaecati possimus, magnam corporis doloribus minus aspernatur exercitationem autem quisquam vel unde, ipsum, optio quam, asperiores.</div>
+	<section class="banner" style="background-image: url(img/bg-banner-home.jpg);">
+		<div class="banner__container container">
+			<div class="banner__box" >
+				<!-- <ul class="banner__breadcrumbs">
+					<li><a href="#">Глaвная</a></li>
+					<li><a href="#">Календарь мероприятий</a></li>
+				</ul> -->
+				<div class="banner__content">
+					<h1 class="banner__title">Российская  <br>ассоциация <br>по менопаузе</h1>
+					<p class="banner__text">Lorem Ipsum - это текст-"рыба", <br>часто используемый в печати и вэб-дизайне. <br>Lorem Ipsum является стандартной "рыбой" <br>для текстов на латинице с начала XVI века.</p>
+					<a href="#" class="banner__button button">Стать членом ассоциации</a>
+				</div>
+			</div>
+		</div>
 	</section>
+
+	<section class="section">
+		<div class="container">
+			<h2 class="title">Новости и события</h2>
+			<div class="news carousel">
+				<article class="news__item">
+					<figure class="news__item-img">
+						<img src="img/img-news1.jpg" alt="">
+					</figure>
+					<h3 class="news__item-title">Заголовок <br>в две строки</h3>
+					<p class="news__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+					<div class="news__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="news__item">
+					<figure class="news__item-img">
+						<img src="img/img-news2.jpg" alt="">
+					</figure>
+					<h3 class="news__item-title">Заголовок <br>в две строки</h3>
+					<p class="news__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+					<div class="news__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="news__item">
+					<figure class="news__item-img">
+						<img src="img/img-news3.jpg" alt="">
+					</figure>
+					<h3 class="news__item-title">Заголовок <br>в две строки</h3>
+					<p class="news__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+					<div class="news__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="news__item">
+					<figure class="news__item-img">
+						<img src="img/img-news1.jpg" alt="">
+					</figure>
+					<h3 class="news__item-title">Заголовок <br>в две строки</h3>
+					<p class="news__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+					<div class="news__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="news__item">
+					<figure class="news__item-img">
+						<img src="img/img-news2.jpg" alt="">
+					</figure>
+					<h3 class="news__item-title">Заголовок <br>в две строки</h3>
+					<p class="news__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+					<div class="news__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="news__item">
+					<figure class="news__item-img">
+						<img src="img/img-news3.jpg" alt="">
+					</figure>
+					<h3 class="news__item-title">Заголовок <br>в две строки</h3>
+					<p class="news__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+					<div class="news__item-link"><a href="#">Подробнее</a></div>
+				</article>
+			</div>
+			<div class="news__button">
+				<a href="#" class="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Все новости&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section section_bg_gray">
+		<div class="container">
+			<h2 class="title">Календарь мероприятий</h2>
+			<div class="events carousel">
+				<article class="events__item">
+					<figure class="events__item-img">
+						<img src="img/img-events1.jpg" alt="">
+						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+					</figure>
+
+					<h3 class="events__item-title">Школа <br>для пациентов</h3>
+					<div class="events__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="events__item">
+					<figure class="events__item-img">
+						<img src="img/img-events2.jpg" alt="">
+						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+					</figure>
+
+					<h3 class="events__item-title">Семинар «Когнитивные  расстройства у женщин  в менопаузе»</h3>
+					<div class="events__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="events__item">
+					<figure class="events__item-img">
+						<img src="img/img-events3.jpg" alt="">
+						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+					</figure>
+
+					<h3 class="events__item-title">Международный  симпозиум по менопаузе (Лондон, Великобритания)</h3>
+					<div class="events__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="events__item">
+					<figure class="events__item-img">
+						<img src="img/img-events1.jpg" alt="">
+						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+					</figure>
+
+					<h3 class="events__item-title">Школа <br>для пациентов</h3>
+					<div class="events__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="events__item">
+					<figure class="events__item-img">
+						<img src="img/img-events2.jpg" alt="">
+						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+					</figure>
+
+					<h3 class="events__item-title">Семинар «Когнитивные  расстройства у женщин  в менопаузе»</h3>
+					<div class="events__item-link"><a href="#">Подробнее</a></div>
+				</article>
+				<article class="events__item">
+					<figure class="events__item-img">
+						<img src="img/img-events3.jpg" alt="">
+						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+					</figure>
+
+					<h3 class="events__item-title">Международный  симпозиум по менопаузе (Лондон, Великобритания)</h3>
+					<div class="events__item-link"><a href="#">Подробнее</a></div>
+				</article>
+			</div>
+			<div class="events__button">
+				<a href="#" class="button">&nbsp;&nbsp;&nbsp;Все мероприятия&nbsp;&nbsp;&nbsp;</a>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h2 class="title">Публикации</h2>
+			<div class="publications slider">
+				<article class="publications__item">
+					<figure class="publications__item-img">
+						<img src="img/img-publications.jpg" alt="">
+					</figure>
+					<div class="publications__item-content">
+						<h3 class="publications__item-title">Заголовок <br>в две строки</h3>
+						<p class="publications__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+						<div class="publications__item-link"><a href="#">Подробнее</a></div>
+					</div>
+				</article>
+				<article class="publications__item">
+					<figure class="publications__item-img">
+						<img src="img/img-publications.jpg" alt="">
+					</figure>
+					<div class="publications__item-content">
+						<h3 class="publications__item-title">Заголовок <br>в две строки</h3>
+						<p class="publications__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+						<div class="publications__item-link"><a href="#">Подробнее</a></div>
+					</div>
+				</article>
+			</div>
+			<div class="publications__button">
+				<a href="#" class="button">&nbsp;&nbsp;&nbsp;Все публикации&nbsp;&nbsp;&nbsp;</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__box">
+				<div class="footer__logo">
+					<figure class="footer__logo-img">
+						<img src="img/logo.png" alt="">
+					</figure>
+					<div class="footer__logo-text">Российская  <br>ассоциация  <br>по менопаузе</div>
+				</div>
+				<div class="footer__menu">
+					<div class="footer__menu-item">
+						<h3 class="footer__menu-title">Об ассоциации</h3>
+						<ul class="footer__menu-list">
+							<li><a href="#">Общие сведения</a></li>
+							<li><a href="#">Стать членом ассоциации</a></li>
+							<li><a href="#">Оплатить взнос</a></li>
+						</ul>
+					</div>
+					<div class="footer__menu-item">
+						<h3 class="footer__menu-title">Врачам</h3>
+						<ul class="footer__menu-list">
+							<li><a href="#">Новости и события</a></li>
+							<li><a href="#">Обучение</a></li>
+							<li><a href="#">Документы и публикации</a></li>
+						</ul>
+					</div>
+					<div class="footer__menu-item">
+						<h3 class="footer__menu-title">Пациентам</h3>
+						<ul class="footer__menu-list">
+							<li><a href="#">Школа для пациентов</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+							<li><a href="#">Все о менопаузе</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Load Scripts Start -->
 	<script src="js/libs.js"></script>

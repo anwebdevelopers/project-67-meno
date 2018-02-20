@@ -1,0 +1,133 @@
+.footer {
+    padding: 5rem 0;
+    background-color: #2e1e1b;
+    color: #fff;
+}
+.footer__box {
+    display: flex;
+    align-items: flex-start;
+}
+.footer__logo {
+    flex: 0 0 auto;
+    width: calc(25% - 1rem);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer__logo-img {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 7.8rem;
+
+    img {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+.footer__logo-text {
+    flex: 1 1 auto;
+    margin: 1rem 0 0 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.footer__menu {
+    flex: 0 0 auto;
+    margin: 0 0 0 2rem;
+    width: calc(75% - 1rem);
+
+    display: flex;
+}
+.footer__menu-item {
+    flex: 0 0 auto;
+    width: calc(33.33% - 1.33rem);
+    margin: 0 1rem;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.footer__menu-title {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.footer__menu-list {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 2rem 0 0 0;
+        a {
+            text-decoration: none;
+            color: inherit;
+            opacity: .5;
+            transition: all .5s ease;
+            &:hover {
+                opacity: 1;
+                color: $red-light;
+            }
+            &:active {
+                opacity: 1;
+                color: $red-dark;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .footer__box {
+        display: block;
+    }
+    .footer__logo {
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+    .footer__logo-img {
+        margin: 0 auto;
+    }
+    .footer__logo-text {
+        margin: 2rem 0 0 0;
+        br {
+            display: none;
+        }
+    }
+    .footer__menu {
+        margin: 4rem 0 0 0;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .footer__menu {
+        display: block;
+    }
+    .footer__menu-item {
+        width: auto;
+        margin: 5rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

@@ -7,6 +7,7 @@ $blue: #1aadf9;
 $blue-light: #48bcf8;
 $blue-dark: #1796d8;
 $brown: #4e342e;
+$gray: #ebeeef;
 @mixin btn {
     display: inline-block;
     vertical-align: top;
@@ -15,7 +16,7 @@ $brown: #4e342e;
     outline: none;
     text-decoration: none;
     background-color: transparent;
-    cursor: default;
+    cursor: pointer;
 }
 // @mixin pseudo($display: block, $pos: absolute, $content: ''){
 //   content: $content;
