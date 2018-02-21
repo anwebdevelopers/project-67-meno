@@ -37,13 +37,13 @@
 
 				<div class="header__login">
 					<figure class="header__login-img">
-						<!-- <img src="img/img-login.png" alt=""> -->
-						<img src="img/img-user.jpg" alt="">
+						<img src="img/img-login.png" alt="">
+						<!-- <img src="img/img-user.jpg" alt=""> -->
 					</figure>
 					<div class="header__login-box">
-						<!-- <div class="header__login-title"><a href="#">Войти</a></div> -->
-						<div class="header__login-title">Константинов К.Е.</div>
-						<div class="header__login-text"><a href="#">Личный кабинет</a></div>
+						<div class="header__login-title"><a href="#login" class="popup-with-move-anim">Войти</a></div>
+						<!-- <div class="header__login-title">Константинов К.Е.</div>
+						<div class="header__login-text"><a href="#">Личный кабинет</a></div> -->
 					</div>
 				</div>
 				<nav class="header__menu">
@@ -69,7 +69,7 @@
 				<div class="banner__content">
 					<h1 class="banner__title">Российская  <br>ассоциация <br>по менопаузе</h1>
 					<p class="banner__text">Lorem Ipsum - это текст-"рыба", <br>часто используемый в печати и вэб-дизайне. <br>Lorem Ipsum является стандартной "рыбой" <br>для текстов на латинице с начала XVI века.</p>
-					<a href="#" class="banner__button button">Стать членом ассоциации</a>
+					<a href="#callback" class="banner__button button popup-with-move-anim">Стать членом ассоциации</a>
 				</div>
 			</div>
 		</div>
@@ -142,7 +142,7 @@
 				<article class="events__item">
 					<figure class="events__item-img">
 						<img src="img/img-events1.jpg" alt="">
-						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+						<time class="events__item-date" datetime="2005-10-07"><span>01</span>февраля</time>
 					</figure>
 
 					<h3 class="events__item-title">Школа <br>для пациентов</h3>
@@ -151,7 +151,7 @@
 				<article class="events__item">
 					<figure class="events__item-img">
 						<img src="img/img-events2.jpg" alt="">
-						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+						<time class="events__item-date" datetime="2005-10-07"><span>01</span>февраля</time>
 					</figure>
 
 					<h3 class="events__item-title">Семинар «Когнитивные  расстройства у женщин  в менопаузе»</h3>
@@ -160,7 +160,7 @@
 				<article class="events__item">
 					<figure class="events__item-img">
 						<img src="img/img-events3.jpg" alt="">
-						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+						<time class="events__item-date" datetime="2005-10-07"><span>01</span>февраля</time>
 					</figure>
 
 					<h3 class="events__item-title">Международный  симпозиум по менопаузе (Лондон, Великобритания)</h3>
@@ -169,7 +169,7 @@
 				<article class="events__item">
 					<figure class="events__item-img">
 						<img src="img/img-events1.jpg" alt="">
-						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+						<time class="events__item-date" datetime="2005-10-07"><span>01</span>февраля</time>
 					</figure>
 
 					<h3 class="events__item-title">Школа <br>для пациентов</h3>
@@ -178,7 +178,7 @@
 				<article class="events__item">
 					<figure class="events__item-img">
 						<img src="img/img-events2.jpg" alt="">
-						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+						<time class="events__item-date" datetime="2005-10-07"><span>01</span>февраля</time>
 					</figure>
 
 					<h3 class="events__item-title">Семинар «Когнитивные  расстройства у женщин  в менопаузе»</h3>
@@ -187,7 +187,7 @@
 				<article class="events__item">
 					<figure class="events__item-img">
 						<img src="img/img-events3.jpg" alt="">
-						<time class="events-item-date" datetime="2005-10-07"><span>01</span>февраля</time>
+						<time class="events__item-date" datetime="2005-10-07"><span>01</span>февраля</time>
 					</figure>
 
 					<h3 class="events__item-title">Международный  симпозиум по менопаузе (Лондон, Великобритания)</h3>
@@ -270,6 +270,45 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="hidden">
+
+		<form id="login" class="popup my-mfp-slide-bottom zoom-anim-dialog">
+			<figure class="popup__icon">
+				<img src="img/img-login.png" alt="">
+			</figure>
+			<h3 class="form__title">Вход в личный кабинет</h3>
+			<input type="text" class="form__field" placeholder="Логин">
+			<input type="text" class="form__field" placeholder="Пароль">
+			<div class="form__button">
+				<button type="submit" class="button">Войти</button>
+			</div>
+			<div class="form__text">
+				<a href="#">Забыли пароль?</a>
+			</div>
+		</form>
+
+
+		<form id="callback" class="popup my-mfp-slide-bottom zoom-anim-dialog">
+			<h3 class="form__title">Отправьте заявку и мы свяжемся с вами</h3>
+			<input type="text" class="form__field" placeholder="Имя">
+			<input type="text" class="form__field" placeholder="E-mail">
+			<input type="text" class="form__field" placeholder="Телефон">
+			<div class="form__button">
+				<button type="submit" class="button">Отправить</button>
+			</div>
+		</form>
+
+
+		<form id="success" class="popup my-mfp-slide-bottom zoom-anim-dialog">
+			<figure class="popup__icon">
+				<img src="img/img-success.png" alt="">
+			</figure>
+			<h3 class="form__title">Ваша заявка  отправленна</h3>
+		</form>
+
+
+	</div>
 
 	<!-- Load Scripts Start -->
 	<script src="js/libs.js"></script>

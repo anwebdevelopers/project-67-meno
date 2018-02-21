@@ -1,51 +1,64 @@
-.publications {
-    margin: 8rem 0 0 0;
+.articles {
+    //margin: 8rem 0 0 0;
 }
-.publications__item {
-    margin: 0 0 3rem 0;
+.articles__item {
+
+    padding: 7rem 0;
+
     display: flex;
-    flex-direction: row-reverse;
-    border-radius: 1rem;
-    overflow: hidden;
+    &:first-child {
+        padding-top: 0;
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+    &+.articles__item {
+        border-top: 1px solid $gray;
+    }
+
 }
-.publications__item-img {
+.articles__item-img {
     margin: 0;
     flex: 0 0 auto;
-    width: 50%;
-    min-height: 40rem;
+    width: 33.33%;
     position: relative;
+
     img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+    &+.articles__item-content {
+        margin: 0 0 0 3rem;
     }
 }
-.publications__item-content {
+.articles__item-content {
     flex: 1 1 auto;
-    padding: 4rem 10% 4rem 4rem;
-    background-color: $gray;
-    background-image: url(../img/bg-publications.png);
-    background-size: contain;
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
+
 }
 
-.publications__item-title {
+.articles__item-title {
     margin: 0;
     font-size: 2.6rem;
     font-weight: 900;
     text-transform: uppercase;
     color: $brown;
 }
-
-.publications__item-text {
-    margin: 3rem 0 0;
+.articles__item-date {
+    display: block;
+    margin: 1rem 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $brown;
+}
+.articles__item-text {
+    margin: 2rem 0 0;
 }
 
-.publications__item-link {
+.articles__item-link {
     margin: auto 0 0 0;
-    padding: 4.5rem 0 0 0;
+    padding: 3rem 0 0 0;
     a {
         text-decoration: none;
         display: inline-block;
@@ -78,12 +91,6 @@
         }
     }
 }
-
-.publications__button {
-    margin: 4.5rem 0 0;
-    text-align: center;
-}
-
 @media only screen and (max-width : 1280px) {
 
 }
@@ -97,19 +104,20 @@
 }
 
 @media only screen and (max-width : 640px) {
-    .publications__item {
-        display: block;
-    }
-    .publications__item-img {
-        width: auto;
-    }
-    .publications__item-content {
-        padding: 4rem 3rem;
-    }
+
 }
 
 @media only screen and (max-width : 480px) {
+    .articles__item {
+        display: block;
+    }
+    .articles__item-img {
+        width: auto;
 
+        &+.articles__item-content {
+            margin: 4rem 0 0 0;
+        }
+    }
 }
 
 @media only screen and (max-width : 360px) {

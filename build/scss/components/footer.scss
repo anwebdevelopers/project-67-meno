@@ -68,15 +68,32 @@
         a {
             text-decoration: none;
             color: inherit;
+            padding: 0 0 .7rem 0;
             opacity: .5;
             transition: all .5s ease;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 0;
+                background-color: $red;
+                transition: inherit;
+            }
+
+            &:active,
             &:hover {
                 opacity: 1;
-                color: $red-light;
+                &:after {
+                    height: 0.3rem;
+                }
             }
+
             &:active {
-                opacity: 1;
-                color: $red-dark;
+                color: $red;
             }
         }
     }
