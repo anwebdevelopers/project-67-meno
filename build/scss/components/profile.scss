@@ -1,0 +1,61 @@
+.profile {
+
+}
+.profile__box {
+    display: flex;
+    align-items: flex-start;
+}
+.profile__fields {
+    flex: 0 0 auto;
+    width: 55%;
+}
+.profile__fields-box {
+    display: flex;
+    justify-content: space-between;
+}
+.profile__fields-item {
+    flex: 0 0 auto;
+    width: 45%;
+}
+.profile__fields-button {
+    margin: 10rem 0 0 0;
+}
+.profile__payments {
+    flex: 0 0 auto;
+    width: 40%;
+    margin: 0 0 0 5%;
+
+    padding: 5rem 4rem;
+    background-color: #ebeeef;
+    border-radius: 1rem;
+    background-image: url(../img/bg-publications.png);
+    background-size: contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.profile__payments-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.profile__payments-item {
+    &+.profile__payments-item {
+        margin-top: 4rem;
+    }
+}
+.profile__payments-text {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: $brown;
+    text-transform: uppercase;
+}
+.profile__payments-date {
+    margin: 2rem 0 0 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #000;
+}
+.profile__payments-button {
+    margin: 10rem 0 0 0;
+}

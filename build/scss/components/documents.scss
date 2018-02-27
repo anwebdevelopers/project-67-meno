@@ -1,0 +1,51 @@
+.documents {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.documents__item {
+
+    padding: 6rem 0;
+
+    &:first-child {
+        padding-top: 0;
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+    &+.documents__item {
+        border-top: 1px solid $gray;
+    }
+
+    display: flex;
+    align-items: center;
+}
+.documents__item-title {
+    flex: 1 1 auto;
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: $brown;
+}
+.documents__item-link {
+
+    display: block;
+    flex: 0 0 auto;
+    margin: 0 0 0 2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: $blue;
+	transition: all .5s ease;
+	&:hover {
+		background-color: $blue-light;
+	}
+	&:active {
+		background-color: $blue-dark;
+	}
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 20'%3E%3Ctitle%3EРесурс 1%3C/title%3E%3Cg%3E%3Cg id='icons'%3E%3Cpath d='M1,12v5a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V12' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px'/%3E%3Cpolyline points='7 9 11 13 15 9' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px'/%3E%3Cline x1='11' y1='13' x2='11' y2='1' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 2.5rem 2.5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

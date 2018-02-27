@@ -85,7 +85,7 @@
                 height: .8rem;
                 border-radius: 50%;
                 margin: 0 1.5rem 1.5rem 1.5rem;
-                background-color: $blue;
+                background-color: lighten($blue, 30%);
                 transition: all 0.5s ease;
                 position: relative;
                 &:active,
