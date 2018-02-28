@@ -59,3 +59,41 @@
 .profile__payments-button {
     margin: 10rem 0 0 0;
 }
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .profile__box {
+        display: block;
+    }
+    .profile__fields {
+        width: auto;
+    }
+    .profile__payments {
+        width: auto;
+        margin: 6rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .profile__fields-box {
+        display: block;
+    }
+    .profile__fields-item {
+        width: auto;
+        margin: 3rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

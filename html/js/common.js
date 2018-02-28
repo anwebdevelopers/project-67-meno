@@ -105,4 +105,34 @@ $(function() {
        mainClass: 'my-mfp-slide-bottom'
    });
 
+   /*******************************************************/
+   //TABS
+   /*******************************************************/
+   $('.tabs-buttons').each(function() {
+       $(this).before('<div class="tabs"></div>').siblings('.tabs').prepend($(this), $(this).siblings().addClass('tabs-item'));
+       $(this).closest('.tabs').find('.tabs-item').wrapAll('<div class="tabs-box"></div>').not(':first').hide();
+       $(this).children('a').first().addClass('active');
+   }).on('click', 'a:not(.active)', function(e) {
+       e.preventDefault();
+       var $this = $(this);
+       $this.addClass('active').siblings().removeClass('active').closest('.tabs').find('.tabs-box .tabs-item').stop().slideUp(300, 'swing').eq($this.index()).stop().slideDown(300, 'swing');
+    });
+
+    /*******************************************************/
+    //CONTENT GALLERY
+    /*******************************************************/
+    $('.content-gallery').addClass('owl-carousel').owlCarousel({
+        nav: true,
+        navText: '',
+        smartSpeed: 600,
+
+        autoWidth: true,
+        margin: 20,
+    }).magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
 });
