@@ -1,10 +1,11 @@
 .news {
-    margin: 8rem -1.5rem 0;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
-.carousel, .slider {
+.carousel, .slider, .content-gallery {
     &.owl-carousel {
         display: block;
         width: auto;
@@ -209,7 +210,7 @@
     text-align: center;
 }
 @media only screen and (max-width : 1440px) {
-    .carousel, .slider {
+    .carousel, .slider, .content-gallery {
         &.owl-carousel {
             padding: 0 7rem;
             .owl-nav {
@@ -234,7 +235,7 @@
 }
 
 @media only screen and (max-width : 640px) {
-    .carousel, .slider {
+    .carousel, .slider, .content-gallery {
         &.owl-carousel {
             padding: 0;
             .owl-nav {
@@ -251,7 +252,7 @@
 }
 
 @media only screen and (max-width : 480px) {
-    .news__box {
+    .news {
         display: block;
     }
     .news__item {

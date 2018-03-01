@@ -1,0 +1,129 @@
+.leaders {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.leaders__item {
+    flex: 0 0 auto;
+    width: calc(33.33% - 3rem);
+    margin: 0 1.5rem 3rem;
+    padding: 0 0 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #fff;
+    transition: all 0.5s ease;
+
+    // &:hover {
+    //     box-shadow: 0 1.5rem 2rem 0 rgba(0,0,0, .09);
+    // }
+
+    display: flex;
+    flex-direction: column;
+}
+
+.leaders__item-img {
+    margin: 0;
+    //position: relative;
+    height: 22rem;
+    // padding-bottom: 57%;
+
+    img {
+        // position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // max-width: 100%;
+        // width: auto;
+        // height: auto;
+    }
+}
+
+.leaders__item-title {
+    margin: 4rem 0 0;
+    padding: 0 2.5rem;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: $brown;
+    text-transform: uppercase;
+    padding-bottom: 2.5rem;
+    background-image: linear-gradient(to right, $red, $red);
+    background-size: 10rem 3px;
+    background-position: 2.5rem 100%;
+    background-repeat: no-repeat;
+}
+
+.leaders__item-text {
+    margin: 2.5rem 0 0;
+    padding: 0 2.5rem;
+}
+
+.leaders__item-link {
+    margin: auto 0 0 0;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 2.5rem 0 0;
+        font-weight: 500;
+        color: $brown;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 1rem;
+            height: 1rem;
+            border-top: 0.2rem solid $blue;
+            border-right: 0.2rem solid $blue;
+            transition: all 0.3s ease;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: $blue-light;
+        }
+
+        &:active {
+            color: $blue-dark;
+        }
+    }
+}
+
+@media only screen and (max-width : 1440px) {
+
+}
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .leaders__item {
+        width: calc(50% - 3rem);
+    }
+}
+
+@media only screen and (max-width : 640px) {
+}
+
+@media only screen and (max-width : 480px) {
+    .leaders {
+        display: block;
+    }
+    .leaders__item {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

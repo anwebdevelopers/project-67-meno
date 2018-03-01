@@ -1,6 +1,7 @@
-.content {
+.content, .about {
     img {
 		max-width: 100% !important;
+        border-radius: 1rem;
 	}
 	h1,h2,h3,h4,h5,h6 {
 		font-weight: 900;
@@ -39,6 +40,7 @@
             //align-self: flex-start;
             //flex: 0 1 auto;
             float: left;
+            margin-top: 0;
             margin-right: 5rem;
             &+p {
                 margin-top: 0;
@@ -113,31 +115,70 @@
 		margin-right: 5rem;
 	}
 	table {
-        border-collapse: separate;
-        border-spacing: 2px;
-        border-color: #dadada;
+        border-collapse: collapse;
+        //border-spacing: 2px;
+        //border-color: #dadada;
         display: block;
         overflow-x: auto;
 		max-width: 100%;
-		font-size: 1.4rem;
+		font-size: 1.8rem;
 
         th, td {
-            padding: 2rem;
+            padding: 2rem 1rem;
+            vertical-align: top;
             text-align: left;
+            &:first-child {
+        		padding-left: 0;
+        	}
+        	&:last-child {
+        		padding-right: 0;
+        	}
         }
         th {
             //background-color: $main-color;
-			color: #fff;
+			//color: #fff;
         }
         td {
-            background-color: #fff;
-			color: #000;
+            //background-color: #fff;
+			//color: #000;
         }
     }
 	position: relative;
     .content-gallery.owl-carousel {
+        a {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                right: 1.5rem;
+                bottom: 1.5rem;
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+                background-color: $red;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ctitle%3EРесурс 1%3C/title%3E%3Cg%3E%3Cg%3E%3Ccircle cx='8.5' cy='8.5' r='7.5' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px'/%3E%3Cline x1='19' y1='19' x2='13.8' y2='13.8' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+                background-size: 2rem 2rem;
+                background-position: center center;
+                background-repeat: no-repeat;
+                opacity: 0;
+                transition: all .5s ease;
+            }
+            &:hover {
+                &:before {
+                    opacity: 1;
+                    background-color: $red-light;
+                }
+            }
+            &:active {
+                &:before {
+                    opacity: 1;
+                    background-color: $red-dark;
+                }
+            }
+        }
         img {
             max-width: calc(100vw - 30px) !important;
+            margin: 0;
         }
         .owl-stage {
             //display: flex;
